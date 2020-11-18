@@ -1,0 +1,257 @@
+$main-green: #BDE078;
+$light-green: #D2F58C;
+$button-green: #C1CFA5;
+$title-font: 'Lilita One', cursive;
+$text-font: 'Roboto', sans-serif;
+
+#title{
+    color: $main-green;
+    font-weight: normal;
+    font-family: $title-font;
+    font-size: 400%;
+    text-align: center;
+    word-spacing: 10px;
+    animation-name: title;
+    animation-duration: 2s;
+}
+
+.container__index--title{
+    color: white;
+    font-weight: normal;
+    font-family: $title-font;
+    font-size: 800%;
+    text-align: center;
+    word-spacing: 10px;
+    animation-name: title;
+    animation-duration: 2s;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .title-home {
+    font-size: 80%;
+  }
+}
+
+.container__index--subtitle {
+    color: white;
+    font-weight: lighter;
+    font-family: $text-font;
+    font-size: 120%;
+    text-align: center;
+    word-spacing: 1px;
+    animation-name: title;
+    animation-duration: 2s;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .container__index--subtitle {
+    font-size: 70%;
+  }
+}
+
+@keyframes title {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.container__index {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-size: cover;
+}
+
+body {
+    background-color: white;
+}
+
+.menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $main-green;
+}
+
+li {
+  a {
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: $main-green;
+    font-family: $text-font;
+    color: white;
+  }
+}
+
+a:hover {
+    background-color: $light-green;
+}
+
+.form-inline {
+    float: right;
+    padding-right: 8px;
+}
+
+.menu-list {
+  .btn:hover {
+    background-color: $light-green;
+  }
+}
+
+/*Home*/
+.logopotstatic {
+    display: block;
+    width: 100px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .logopotstatic {
+    width: 10%;
+    height: 10%;
+  }
+}
+
+.container__index {
+  .container__index--btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: $button-green;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .container__index--btn:hover {
+    background-color: black;
+  }
+}
+
+@media (max-width: 768px) {
+  .container__index .btn {
+    padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+  }
+}
+
+/*Pots*/
+.carousel-inner img {
+    width: 35%;
+    height: 35%;
+    margin: auto;
+    display: block;
+}
+
+/*Plants*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 500%;
+    animation-name: flex-container;
+    animation-duration: 2s;
+}
+
+@keyframes flex-container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*About*/
+.subtitle {
+  text-align: center;
+  color: $button-green;
+}
+
+.container__pot {
+  display: flex;
+  flex-direction: row;
+  .container__pot--description {
+    font-family: $text-font;
+    color: black;
+    text-align:justify;
+    margin-left:3%;
+    margin-right:10%;
+    margin-top:3%;
+    margin-bottom:1%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center
+  }
+  .container__pot--img {
+    margin: 20px 30px 20px 30px;
+    width: 40%;
+    object-fit: contain;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    float: left;
+  }
+  .container__pot--subtitle {
+    font-family: $text-font;
+    color: black;
+    text-align:left;
+    margin-left:0%;
+    margin-right:10%;
+    margin-top:2%;
+    margin-bottom:2%;
+    font-size: 150%;
+    font-weight: bold;
+    display: inline-block;
+  }
+}
+
+
+/*Contact*/
+.form {
+  font-family: $text-font;
+    .form__btn--primary {
+      background-color: $button-green;
+      color: white;
+      border-style: hidden;
+    }
+      .form__btn--primary:hover {
+      background-color: $main-green;
+      }
+}
+
+.divform {
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    background-color: $main-green;
+    color: white;
+    font-family: $text-font;
+    font-weight: normal;
+    font-size: 80%;
+    text-align: center;
+}
