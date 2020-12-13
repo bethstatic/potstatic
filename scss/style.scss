@@ -157,11 +157,15 @@ a:hover {
 }
 
 /*Pots*/
+
 .carousel-inner img {
-    width: 35%;
-    height: 35%;
+    width: 25%;
+    height: 25%;
     margin: auto;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-self: left;
+    float: left;
 }
 
 /*Plants*/
