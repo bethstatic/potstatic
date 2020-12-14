@@ -2,7 +2,7 @@
   color: #BDE078;
   font-weight: normal;
   font-family: "Lilita One", cursive;
-  font-size: 400%;
+  font-size: 6vw;
   text-align: center;
   word-spacing: 10px;
   animation-name: title;
@@ -12,7 +12,7 @@
   color: white;
   font-weight: normal;
   font-family: "Lilita One", cursive;
-  font-size: 800%;
+  font-size: 10vw;
   text-align: center;
   word-spacing: 10px;
   animation-name: title;
@@ -22,15 +22,11 @@
   left: 50%;
   transform: translate(-50%, -50%); }
 
-@media (max-width: 768px) {
-  .title-home {
-    font-size: 80%; } }
-
 .container__index--subtitle {
   color: white;
   font-weight: lighter;
   font-family: "Roboto", sans-serif;
-  font-size: 120%;
+  font-size: 2vw;
   text-align: center;
   word-spacing: 1px;
   animation-name: title;
@@ -39,10 +35,6 @@
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%); }
-
-@media (max-width: 768px) {
-  .container__index--subtitle {
-    font-size: 70%; } }
 
 @keyframes title {
   0% {
@@ -87,15 +79,13 @@ a:hover {
 /*Home*/
 .logopotstatic {
   display: block;
-  width: 100px;
-  height: 60px;
+  width: 8vw;
+  height: 5vw;
   margin-left: auto;
   margin-right: auto; }
 
-@media (max-width: 768px) {
-  .logopotstatic {
-    width: 10%;
-    height: 10%; } }
+.img-fluid {
+  width: 100%; }
 
 .container__index .container__index--btn {
   position: absolute;
@@ -105,7 +95,7 @@ a:hover {
   -ms-transform: translate(-50%, -50%);
   background-color: #C1CFA5;
   color: white;
-  font-size: 16px;
+  font-size: 1vw;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -115,27 +105,26 @@ a:hover {
 .container__index .container__index--btn:hover {
   background-color: black; }
 
-@media (max-width: 768px) {
-  .container__index .btn {
-    padding: 2px 4px;
-    font-size: 80%;
-    line-height: 1; } }
-
 /*Pots*/
 .carousel-inner img {
-  width: 35%;
-  height: 35%;
+  width: 30%;
+  height: 30%;
   margin: auto;
-  display: block; }
+  display: flex;
+  flex-direction: row; }
 
 /*Plants*/
 .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 500%;
+  height: 100%;
   animation-name: flex-container;
   animation-duration: 2s; }
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column; } }
 
 @keyframes flex-container {
   0% {
@@ -146,7 +135,8 @@ a:hover {
 /*About*/
 .subtitle {
   text-align: center;
-  color: #C1CFA5; }
+  color: #C1CFA5;
+  font-size: 3vw; }
 
 .container__pot {
   display: flex;
@@ -154,7 +144,7 @@ a:hover {
   .container__pot .container__pot--description {
     font-family: "Roboto", sans-serif;
     color: black;
-    text-align: justify;
+    text-align: left;
     margin-left: 3%;
     margin-right: 10%;
     margin-top: 3%;
@@ -179,9 +169,20 @@ a:hover {
     margin-right: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
-    font-size: 150%;
+    font-size: 3vw;
     font-weight: bold;
     display: inline-block; }
+
+@media (max-width: 800px) {
+  .container__pot {
+    flex-direction: column; }
+  .container__pot--img {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 60%; } }
 
 /*Contact*/
 .form {
@@ -195,6 +196,11 @@ a:hover {
 
 .divform {
   text-align: center; }
+
+@media (max-width: 800px) {
+  .form {
+    flex-direction: column;
+    align-items: stretch; } }
 
 /*Footer*/
 footer {
