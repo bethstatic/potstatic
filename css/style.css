@@ -8,45 +8,15 @@
   animation-name: title;
   animation-duration: 2s; }
 
-.container__index--title {
-  color: white;
-  font-weight: normal;
-  font-family: "Lilita One", cursive;
-  font-size: 10vw;
-  text-align: center;
-  word-spacing: 10px;
-  animation-name: title;
-  animation-duration: 2s;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.container__index--subtitle {
-  color: white;
-  font-weight: lighter;
-  font-family: "Roboto", sans-serif;
-  font-size: 2vw;
-  text-align: center;
-  word-spacing: 1px;
-  animation-name: title;
-  animation-duration: 2s;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+@media (max-width: 800px) {
+  #title {
+    font-size: 10vw; } }
 
 @keyframes title {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
-.container__index {
-  position: relative;
-  text-align: center;
-  color: white;
-  background-size: cover; }
 
 body {
   background-color: white; }
@@ -87,6 +57,40 @@ a:hover {
 .img-fluid {
   width: 100%; }
 
+.container__index--title {
+  color: white;
+  font-weight: normal;
+  font-family: "Lilita One", cursive;
+  font-size: 12vw;
+  text-align: center;
+  word-spacing: 10px;
+  animation-name: title;
+  animation-duration: 2s;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.container__index--subtitle {
+  color: white;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  word-spacing: 1px;
+  animation-name: title;
+  animation-duration: 2s;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.container__index {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-size: cover; }
+
 .container__index .container__index--btn {
   position: absolute;
   top: 80%;
@@ -113,7 +117,15 @@ a:hover {
     display: none; }
   .img-fluid2 {
     display: block;
-    width: 100%; } }
+    width: 100%; }
+  .container__index--subtitle {
+    top: 55%; }
+  .container__index--title {
+    font-size: 15vw; }
+  .container__index--subtitle {
+    font-size: 5vw; }
+  .container__index--btn {
+    font-size: 4vw; } }
 
 /*Pots*/
 .carousel-inner img {
@@ -122,6 +134,47 @@ a:hover {
   margin: auto;
   display: flex;
   flex-direction: row; }
+
+.choose-pot {
+  color: black;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  font-size: 3vw;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  word-spacing: 10px;
+  animation-name: title;
+  animation-duration: 2s; }
+
+.pot-btn {
+  position: relative;
+  display: block;
+  margin-left: 50%;
+  margin-bottom: 5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #C1CFA5;
+  color: white;
+  font-size: 1vw;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center; }
+
+.pot-btn:hover {
+  background-color: black; }
+
+@media (max-width: 800px) {
+  .carousel-inner img {
+    width: 100%;
+    height: 100%; }
+  .choose-pot {
+    font-size: 5vw;
+    margin-bottom: 10%; }
+  .pot-btn {
+    font-size: 3vw; } }
 
 /*Plants*/
 .flex-container {
@@ -134,7 +187,14 @@ a:hover {
 
 @media (max-width: 800px) {
   .flex-container {
-    flex-direction: column; } }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .choose-pot {
+    font-size: 5vw;
+    margin-bottom: 10%; }
+  .pot-btn {
+    font-size: 3vw; } }
 
 @keyframes flex-container {
   0% {
@@ -191,8 +251,10 @@ a:hover {
     margin-right: auto;
     display: flex;
     justify-content: center;
-    align-self: center;
-    width: 60%; } }
+    align-items: center;
+    width: 70%; }
+  .container__pot--subtitle {
+    font-size: 5vw; } }
 
 /*Contact*/
 .form {
