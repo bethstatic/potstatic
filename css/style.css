@@ -105,6 +105,10 @@ a:hover {
 .container__index .container__index--btn:hover {
   background-color: black; }
 
+@media only screen and (max-width: 800px) {
+  .img-fluid {
+    background-image: url("background2.jpg"); } }
+
 /*Pots*/
 .carousel-inner img {
   width: 30%;
@@ -209,4 +213,8 @@ footer {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 80%;
-  text-align: center; }
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
