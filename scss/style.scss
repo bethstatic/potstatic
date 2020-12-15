@@ -133,12 +133,21 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 800px){ 
+.img-fluid2{
+  display: none;
+}
 
+@media only screen and (max-width: 800px){ 
   .img-fluid{
-     background-image: url("background2.jpg");
+    display: none;
+  }
+
+  .img-fluid2{
+    display: block;
+    width: 100%;
   }
 }
+
 
 /*Pots*/
 
