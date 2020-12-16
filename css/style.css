@@ -125,7 +125,7 @@ a:hover {
   .container__index--subtitle {
     font-size: 5vw; }
   .container__index--btn {
-    font-size: 4vw; } }
+    font-size: 4vw !important; } }
 
 /*Pots*/
 .carousel-inner img {
@@ -247,14 +247,16 @@ a:hover {
   .container__pot {
     flex-direction: column; }
   .container__pot--img {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 70%; }
   .container__pot--subtitle {
-    font-size: 5vw; } }
+    font-size: 5vw !important; }
+  .subtitle {
+    font-size: 4vw; } }
 
 /*Contact*/
 .form {
